@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import InputField from './InputField';
 import ViewTodoList from './ViewTodoList';
-import './App.css';
+import './css/App.css';
 
 function App() {
   const [todos, setTodos] = useState<string[]>([]);

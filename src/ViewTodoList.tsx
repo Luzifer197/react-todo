@@ -1,6 +1,6 @@
 import React from 'react';
 import EditTodoList from './EditTodoList';
-import './App.css';
+import './css/ViewTodoList.css';
 
 interface ViewTodoListProps {
   todos: string[]; // Typisierung für das 'todos'-Prop

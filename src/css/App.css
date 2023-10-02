@@ -1,0 +1,124 @@
+:root {
+  --dark: #374151;
+  --darker: #1F2937;
+  --darkest: #111827;
+  --grey: #6B7280;
+  --pink: #EC4899;
+  --purple: #8B5CF6;
+  --light: #EEE;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--light);
+  background-color: var(--darkest);
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+hr {
+  color: var(--grey);
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+main {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+.task-list h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* In der Mitte ausrichten */
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: overlay;
+}
+
+.task .content {
+  flex: 1 1 0%;
+}
+
+
+
+.task .content .text {
+  color: var(--light);
+  font-size: 1.125rem;
+  width: calc(100% - 2rem); 
+  display: inline-block; 
+  transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+  color: var(--pink);
+}
+
+.task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}

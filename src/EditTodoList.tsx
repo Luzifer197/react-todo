@@ -1,6 +1,6 @@
 // EditTodoList.tsx
 import React, { useState } from 'react';
-import './App.css';
+import './css/EditTodoList.css';
 
 interface EditTodoListProps {
   todos: string[];
@@ -42,7 +42,7 @@ const EditTodoList: React.FC<EditTodoListProps> = ({ todos, onEdit, index }) => 
           />
         </div>
       ))}
-      <button id='TaskEdit' onClick={() => onEdit(editedTodos[index !== null ? index : 0])}>Speichern</button>
+      <button id='TaskSave' onClick={() => onEdit(editedTodos[index !== null ? index : 0])}>Speichern</button>
     </div>
   );
 };
