@@ -36,7 +36,7 @@ const EditTodoList: React.FC<EditTodoListProps> = ({ todos, onEdit, index }) => 
           <input
             id="editTask"
             type="text"
-            placeholder={todo}
+            value={todo}
             onChange={handleInputChange}
             onKeyPress={handleInputKeyPress}
           />
