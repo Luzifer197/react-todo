@@ -56,7 +56,7 @@ button {
   background: none;
 }
 
-#new-task-input, #ToDoEdit, #EditText {
+#new-task-input, #ToDoEdit, #editTask {
   flex: 1 1 0%;
   background-color: var(--darker);
   padding: 1rem;
@@ -67,7 +67,7 @@ button {
   margin-top: 2%;
 }
 
-#new-task-input::placeholder, #ToDoEdit::placeholder, #EditText::placeholder {
+#new-task-input::placeholder, #ToDoEdit::placeholder, #editTask::placeholder {
   color: var(--grey);
 }
 
@@ -152,7 +152,7 @@ main {
   flex: 1 1 0%;
 }
 
-#ToDoElement, #ToDoEdit, #EditText {
+#ToDoElement, #ToDoEdit, #editTask {
   background: var(--darker);
   border-radius: 1rem; 
   width: 75%;
