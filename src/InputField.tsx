@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/InputField.css';
+import './App.css';
 
 interface InputFieldProps {
   type: string; // Hier den Typ des input-Elements festlegen

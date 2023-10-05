@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import InputField from './InputField';
 import ViewTodoList from './ViewTodoList';
-import './css/App.css';
+import './App.css';
 
 function App() {
   const [todos, setTodos] = useState<string[]>([]);
@@ -22,19 +22,15 @@ function App() {
       });
       setEditIndex(null);
     } else {
-      // Hier kannst du eine Benachrichtigung auslösen oder anderweitig behandeln,
-      // falls editIndex null ist und eine Bearbeitung ausgelöst wird.
       console.error("Es wurde kein Element zum Bearbeiten ausgewählt.");
     }
   };
-  
 
   const addTodo = (newTodo: string) => {
     if (newTodo.trim() !== '') {
       if (editIndex !== null) {
-        onEdit(newTodo); // Bearbeitungsmodus: Bearbeite das Todo
+        onEdit(newTodo);
       } else {
-        // Hinzufügen-Modus: Füge das neue Todo hinzu
         setTodos([...todos, newTodo]);
       }
     }

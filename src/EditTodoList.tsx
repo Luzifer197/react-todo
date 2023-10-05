@@ -1,6 +1,6 @@
 // EditTodoList.tsx
 import React, { useState } from 'react';
-import './css/EditTodoList.css';
+import './App.css';
 
 interface EditTodoListProps {
   todos: string[];
